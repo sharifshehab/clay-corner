@@ -12,7 +12,7 @@ const Products = () => {
             </div>
             <div className="products grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {
-                    craftFourData.map(item => <Product key={item._id} item={item}></Product>)
+                    craftFourData?.map(item => <Product key={item._id} item={item}></Product>)
                 }
             </div>{/* products */}
         </section> /* products-wrapper */

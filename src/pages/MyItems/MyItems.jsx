@@ -1,26 +1,23 @@
 import { useContext, useEffect, useState } from "react";
-
 import { AuthContext } from "../../contexts/UserContext";
 import separator from '../../assets/separator.png';
 import Item from "./Item";
-
+import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 const MyItems = () => {
     const { user } = useContext(AuthContext);
     const [myItems, setMyItems] = useState([]);
-    
-    useEffect(() => {
-        if (user?.email) {
-            // Fetch items associated with the logged-in user
-            fetch(`http://localhost:5000/crafts?email=${user.email}`)
-                .then(res => res.json())
-                .then(data => {
-                    setMyItems(data);
+    const axiosSecure = useAxiosSecure();
 
-                })
-                .catch(error => console.error('Error fetching data:', error));
+    const url = `http://localhost:5000/crafts?email=${user.email}`;
+    useEffect(() => {
+        if (user?.email) { 
+            axiosSecure.get(url)
+                .then(data => {
+                        setMyItems(data.data);
+                    })
         }
-    }, []); 
+    }, [user, axiosSecure]); 
     
     return (
         <section className="my-items-wrapper container mx-auto">

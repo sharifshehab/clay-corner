@@ -1,6 +1,7 @@
 import { createUserWithEmailAndPassword, updateProfile, signInWithEmailAndPassword, onAuthStateChanged, signOut, getAuth } from 'firebase/auth';
 import app from '../firebase/firebase.init'; // Import the Firebase app configuration
 import { createContext, useEffect, useState } from 'react';
+import axios from 'axios';
 
 // Create a context for authentication state and functions
 export const AuthContext = createContext();
@@ -47,6 +48,20 @@ const UserContext = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser); // Update user state with current user
             setLoading(false); // Set loading state to false once authentication state is resolved
+            const userEmail = currentUser?.email || user?.email;
+            const loggedUser = { email: userEmail }
+
+            if (currentUser) {
+                axios.post('http://localhost:5000/jwt', loggedUser, { withCredentials: true })
+                    .then(res => {
+                        // console.log(res.data);
+                    });
+            } else {
+                axios.post('http://localhost:5000/logout', loggedUser, { withCredentials: true })
+                    .then(res => {
+                        console.log(res.data);
+                })
+            }
         });
 
         // Cleanup subscription on component unmount
