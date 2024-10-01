@@ -4,11 +4,11 @@ import { Outlet, useLoaderData } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 
 const Root = () => {
-    const { craftFourData, craftAllData, craftCategoryData } = useLoaderData();
+    const { craftFourData, craftAllData, craftCategoryData, craftCountData } = useLoaderData();
     return (
         <>
             <Header></Header>
-            <Outlet context={{ craftFourData, craftAllData, craftCategoryData }}></Outlet>
+            <Outlet context={{ craftFourData, craftAllData, craftCategoryData, craftCountData }}></Outlet>
             <Footer></Footer>
         </>
     );
