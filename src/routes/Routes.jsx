@@ -28,10 +28,10 @@ export const router = createBrowserRouter([
             const craftAllResponse = await fetch('http://localhost:5000/crafts');
             const craftAllData = await craftAllResponse.json();
 
-            // Pagination
+            // Pagination -- all items count
             const craftCountResponse = await fetch('http://localhost:5000/craftsCount');
             const craftCountData = await craftCountResponse.json();
-
+            
             return { craftFourData, craftAllData, craftCategoryData, craftCountData };
         },
 

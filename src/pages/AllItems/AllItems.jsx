@@ -6,39 +6,42 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const AllItems = () => {
-    const { craftCountData } = useOutletContext();
-    const [allData, setAllData] = useState([]);
-    const [itemsPerPage, setItemsPerPage] = useState(4);
-    const numberOfPages = Math.ceil(craftCountData.count / itemsPerPage);
-    const [currentPage, setCurrentPage] = useState(0);
-    const [search, setSearch] = useState('');
+    const { craftCountData } = useOutletContext(); // total number of items.
 
-    const pages = [...Array(numberOfPages).keys()]
+    const [allData, setAllData] = useState([]); // This stores the data fetched from the API.
 
+    const [itemsPerPage, setItemsPerPage] = useState(4); // Number of items shown per page.
+    const numberOfPages = Math.ceil(craftCountData.count / itemsPerPage); // Total number of pages based on total items.
+    const [currentPage, setCurrentPage] = useState(0); // Tracks which page you're on.
+    const pages = [...Array(numberOfPages).keys()]; // Creates an array of page numbers (0, 1, 2, etc.).
+
+    const [search, setSearch] = useState(''); // Stores the text you're searching for.
+
+    // Moves to the previous page if you're not on the first one.
     const handlePrevPage = () => {
         if (currentPage > 0) {
             setCurrentPage(currentPage - 1);
         }
-    }
+    };
+    // Moves to the next page if you're not on the last one.
     const handleNextPage = () => {
         if (currentPage < pages.length - 1) {
             setCurrentPage(currentPage + 1);
         }
-    }
+    };
 
-    /* for search  */
+    // Handles the search form submission.
     const handleSearch = (e) => {
-        e.preventDefault();
-        const searchText = e.target.search.value;
-        setSearch(searchText);
-    }
+        e.preventDefault(); // Stops the page from reloading when you submit.
+        const searchText = e.target.search.value; // Gets the search text.
+        setSearch(searchText); // Updates the search state.
+    };
 
+    // Fetches data from the API when the page, items per page, or search text changes.
     useEffect(() => {
         axios.get(`http://localhost:5000/crafts?page=${currentPage}&size=${itemsPerPage}&search=${search}`)
-            .then(data => setAllData(data.data))
-    }, [currentPage, itemsPerPage, search]);
-    
-
+            .then(data => setAllData(data.data)); // Updates the data with the fetched result.
+    }, [currentPage, itemsPerPage, search]); // Runs again whenever the page, items per page, or search changes.
 
     return (
         <section className="all-items-wrapper container mx-auto">

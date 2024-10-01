@@ -2,8 +2,8 @@ import axios from "axios";
 import { useEffect } from "react";
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000',
-    withCredentials: true
+    baseURL: 'http://localhost:5000', /* base url */
+    withCredentials: true            /* for "JWT" API protection */
 });
 
 const useAxiosSecure = () => {
