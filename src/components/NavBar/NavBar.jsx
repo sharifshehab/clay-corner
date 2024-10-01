@@ -10,7 +10,7 @@ const NavBar = () => {
             <li> <NavLink className={({ isActive }) => isActive ? 'underline decoration-primary decoration-2 underline-offset-8' : 'hover:underline decoration-primary decoration-2 underline-offset-8'} to='/' end>Home</NavLink></li>
             <li> <NavLink className={({ isActive }) => isActive ? 'underline decoration-primary decoration-2 underline-offset-8' : 'hover:underline decoration-primary decoration-2 underline-offset-8'} to='/all-items'>All Art & craft Items</NavLink></li >
             <li> <NavLink className={({ isActive }) => isActive ? 'underline decoration-primary decoration-2 underline-offset-8' : 'hover:underline decoration-primary decoration-2 underline-offset-8'} to='/my-items'>My Art&Craft Items</NavLink></li >
-            <li> <NavLink className={({ isActive }) => isActive ? 'underline decoration-primary decoration-2 underline-offset-8' : 'hover:underline decoration-primary decoration-2 underline-offset-8'} to='/add-item'>Add Craft Item</NavLink></li >
+            {user?.email && <li> <NavLink className={({ isActive }) => isActive ? 'underline decoration-primary decoration-2 underline-offset-8' : 'hover:underline decoration-primary decoration-2 underline-offset-8'} to='/add-item'>Add Craft Item</NavLink></li >}
         </>
     const sign =
         <>

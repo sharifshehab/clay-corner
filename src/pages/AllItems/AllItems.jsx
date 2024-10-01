@@ -2,9 +2,15 @@
 import { useOutletContext } from 'react-router-dom';
 import separator from '../../assets/separator.png';
 import SingleItem from './SingleItem';
+import { TabTitle } from '../../Utiles/DynamicTitle';
+import { useEffect } from 'react';
 
 const AllItems = () => {
+
+ 
+
     const { craftAllData } = useOutletContext();
+
     return (
         <section className="all-items-wrapper container mx-auto">
             <div className="sec-heading">

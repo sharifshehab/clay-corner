@@ -7,6 +7,8 @@ import Register from "../pages/Register/Register";
 import MyItems from "../pages/MyItems/MyItems";
 import PrivateRoute from "./PrivateRoute";
 import AllItems from "../pages/AllItems/AllItems";
+import RouterWrapper from "../components/RouterWrapper";
+import RouteWrapper from "../components/RouterWrapper";
 
 export const router = createBrowserRouter([
     {
@@ -30,14 +32,15 @@ export const router = createBrowserRouter([
         },
 
         children: [
-            { path: "/", element: <Home /> },
-            { path: "home", element: <Home /> },
-            { path: "all-items", element: <AllItems /> },
+            { path: "/", element: <RouteWrapper element={Home} title={"Clay Corner - The Handcrafters Sanctuary"} /> },
+            { path: "home", element: <RouteWrapper element={Home} title={"Clay Corner - The Handcrafters Sanctuary"} /> },
+            { path: "all-items", element: <RouterWrapper element={AllItems} title={"Clay Corner | All Items"} /> },
             {
                 path: "my-items",
-                element: (
+                element: 
+                    (
                     <PrivateRoute>
-                        <MyItems />
+                            <RouteWrapper element={MyItems} title={"Clay Corner | My Items"} />
                     </PrivateRoute>
                 ),
             },
@@ -45,11 +48,11 @@ export const router = createBrowserRouter([
                 path: "add-item",
                 element: (
                     <PrivateRoute>
-                        <AddItem />
+                        <RouteWrapper element={AddItem} title={"Clay Corner | Add Items"} />
                     </PrivateRoute>
                 ),
             },
-            { path: "login", element: <Login /> },
+            { path: "login", element: <RouterWrapper element={Login} title={"Clay Corner | Login "} /> },
             { path: "register", element: <Register /> },
         ],
     },
