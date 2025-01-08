@@ -25,15 +25,21 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
     - swiper: ^11.1.12
     
 ## Dev Dependencies:
-    - axios: ^1.7.7,
-    - firebase: ^10.13.1,
-    - react: ^18.3.1,
-    - react-awesome-slider: ^4.1.0,
-    - react-dom: ^18.3.1,
-    - react-icons: ^5.3.0,
-    - react-router-dom: ^6.26.2,
-    - sweetalert2: ^11.14.0,
-    - swiper: ^11.1.12
+    - @eslint/js: ^9.9.0,
+    - @types/react: ^18.3.3,
+    - @types/react-dom: ^18.3.0,
+    - @vitejs/plugin-react: ^4.3.1,
+    - autoprefixer: ^10.4.20,
+    - daisyui: ^4.12.10,
+    - eslint: ^9.9.0,
+    - eslint-plugin-react: ^7.35.0,
+    - eslint-plugin-react-hooks: ^5.1.0-rc.0,
+    - eslint-plugin-react-refresh: ^0.4.9,
+    - globals: ^15.9.0,
+    - postcss: ^8.4.45,
+    - sass-embedded: ^1.78.0,
+    - tailwindcss: ^3.4.10,
+    - vite: ^5.4.1
 
 ## Installation:
 1. **First, clone the repository to your local machine. you can do this by downloading the zip file or by cloning it using the web URL**
