@@ -13,22 +13,15 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
 3. **Protected routes for registered users**
 
 ## Dependency:
-    - **"@tanstack/react-query": "^5.62.16",
-    - **"axios": "^1.7.9",
-    - **"firebase": "^11.0.2",
-    - **"localforage": "^1.10.0",
-    - **"react": "^18.3.1",
+    - **"axios": "^1.7.7",
+    - **"firebase": "^10.13.1",
+    - ** "react": "^18.3.1",
+    - **"react-awesome-slider": "^4.1.0",
     - **"react-dom": "^18.3.1",
-    - **"react-helmet-async": "^2.0.5",
-    - **"react-hook-form": "^7.53.2",
-    - **"react-icons": "^5.4.0",
-    - **"react-router-dom": "^7.0.2",
-    - **"react-select": "^5.8.3",
-    - **"react-simple-star-rating": "^5.1.7",
-    - **"react-stickynode": "^5.0.1",
-    - **"shadcn": "^2.1.6",
-    - **"sweetalert2": "^11.14.5",
-    - **"swiper": "^11.1.15"
+    - **"react-icons": "^5.3.0",
+    - **"react-router-dom": "^6.26.2",
+    - **"sweetalert2": "^11.14.0",
+    - ** "swiper": "^11.1.12"
 
 ## Installation:
 1. **First, clone the repository to your local machine. you can do this by downloading the zip file or by cloning it using the web URL**
