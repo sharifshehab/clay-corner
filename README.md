@@ -13,7 +13,7 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
 3. **Protected routes for registered users**
 
 ## Dependency:
-    - "axios": "^1.7.7",
+    - **"axios": "^1.7.7"**,
     - **"firebase": "^10.13.1",
     - ** "react": "^18.3.1",
     - **"react-awesome-slider": "^4.1.0",
