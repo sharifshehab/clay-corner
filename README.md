@@ -5,6 +5,7 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
 ## Technologies used:
 - **React Router**
 - **Firebase**
+- **Express.js**
 - **JWT**
 
 ## Key features:
@@ -12,24 +13,43 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
 2. **Search functionality**
 3. **Protected routes for registered users**
 
-## Dependency:
-    - "axios": "^1.7.7",
-    - "firebase": "^10.13.1",
-    - "react": "^18.3.1",
-    - "react-awesome-slider": "^4.1.0",
-    - "react-dom": "^18.3.1",
-    - "react-icons": "^5.3.0",
-    - "react-router-dom": "^6.26.2",
-    - "sweetalert2": "^11.14.0",
-    - "swiper": "^11.1.12"
+## Dependencies:
+    - axios: ^1.7.7,
+    - firebase: ^10.13.1,
+    - react: ^18.3.1,
+    - react-awesome-slider: ^4.1.0,
+    - react-dom: ^18.3.1,
+    - react-icons: ^5.3.0,
+    - react-router-dom: ^6.26.2,
+    - sweetalert2: ^11.14.0,
+    - swiper: ^11.1.12
+    
+## Dev Dependencies:
+    - axios: ^1.7.7,
+    - firebase: ^10.13.1,
+    - react: ^18.3.1,
+    - react-awesome-slider: ^4.1.0,
+    - react-dom: ^18.3.1,
+    - react-icons: ^5.3.0,
+    - react-router-dom: ^6.26.2,
+    - sweetalert2: ^11.14.0,
+    - swiper: ^11.1.12
 
 ## Installation:
 1. **First, clone the repository to your local machine. you can do this by downloading the zip file or by cloning it using the web URL**
-2. **Navigate to the project folder and open it in cmd terminal**
-3. **Write npm i in the terminal**
-4. **After the installation is complete, start the application by typing npm run dev**
+2. **Navigate to the project folder and open it with cmd terminal**
+3. **Write <code>npm i</code> in the terminal**
+4. **Create a file name <code>.env.local</code>, inside the project root folder**
+5. **Save your firebase config keys as environment variables in this file:**
+    - **VITE_APIKEY=your-firebase-api-key**
+    - **VITE_AUTHDOMAIN=your-firebase-authdomain**
+    - **VITE_PROJECTID=your-firebase-project-id**
+    - **VITE_STORAGEBUCKET=your-firebase-storage-bucket**
+    - **VITE_MESSAGINGSENDERID=your-firebase-messaging-sender-id**
+    - **VITE_APPID=your-firebase-app-id**
+6. **After the installation is complete, start the application by typing <code>npm run dev</code> in terminal**
 
 - **You should now be able to view and interact with the application on your local machine!**
 
-##  Live link:
+##  Live Link:
 - **[ClayCorner](https://clay-corner.web.app)**
