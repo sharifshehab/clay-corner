@@ -13,15 +13,15 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
 3. **Protected routes for registered users**
 
 ## Dependency:
-    - **"axios": "^1.7.7"**,
-    - **"firebase": "^10.13.1",
-    - ** "react": "^18.3.1",
-    - **"react-awesome-slider": "^4.1.0",
-    - **"react-dom": "^18.3.1",
-    - **"react-icons": "^5.3.0",
-    - **"react-router-dom": "^6.26.2",
-    - **"sweetalert2": "^11.14.0",
-    - ** "swiper": "^11.1.12"
+    - "axios": "^1.7.7",
+    - "firebase": "^10.13.1",
+    - "react": "^18.3.1",
+    - "react-awesome-slider": "^4.1.0",
+    - "react-dom": "^18.3.1",
+    - "react-icons": "^5.3.0",
+    - "react-router-dom": "^6.26.2",
+    - "sweetalert2": "^11.14.0",
+    - "swiper": "^11.1.12"
 
 ## Installation:
 1. **First, clone the repository to your local machine. you can do this by downloading the zip file or by cloning it using the web URL**
