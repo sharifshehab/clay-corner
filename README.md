@@ -1,6 +1,6 @@
 # Clay Corner - The Handcrafters Sanctuary 
 
-Welcome to our Clay Item Store, where tradition and creativity come together to offer you an exquisite collection of handcrafted clay pieces. Whether you're searching for stunning home decor, elegant vases, or functional pottery, we have something to suit every taste and style. Each item in our collection is carefully crafted by skilled artisans, ensuring that every piece is unique and made with the utmost attention to detail. Our clay creations are perfect for adding a touch of warmth and personality to your home or as thoughtful gifts for loved ones. From rustic, earthy designs to more modern and sleek finishes, our range of products combines beauty with function, making them a lasting addition to any space. Explore our store today and bring home a piece of art that will elevate your home and create lasting memories.
+Clay Corner, is where tradition and creativity come together to offer an exquisite collection of handcrafted clay pieces. Whether you're searching for stunning home decor, elegant vases, or functional pottery, Clay Corner has something to suit every taste and style. Each item in our collection is carefully crafted by skilled artisans, ensuring that every piece is unique and made with the utmost attention to detail. Our clay creations are perfect for adding a touch of warmth and personality to your home or as thoughtful gifts for loved ones. From rustic, earthy designs to more modern and sleek finishes, our range of products combines beauty with function, making them a lasting addition to any space. Explore our store today and bring home a piece of art that will elevate your home and create lasting memories.
 
 ## Technologies used:
 - **React Router**
@@ -58,4 +58,4 @@ Welcome to our Clay Item Store, where tradition and creativity come together to 
 - **You should now be able to view and interact with the application on your local machine!**
 
 ##  Live Link:
-- **[ClayCorner](https://clay-corner.web.app)**
+- **[Clay Corner](https://clay-corner.web.app)**
