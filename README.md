@@ -1,6 +1,6 @@
 # Clay Corner - The Handcrafters Sanctuary 
 <div align="center">
-  <img height="200" src="https://i.ibb.co.com/Y4q6g2wS/2025-01-09-14-38-41-clay-corner-web-app-493063a9551b.png"  />
+  <img height="200" width="100%" src="https://i.ibb.co.com/Y4q6g2wS/2025-01-09-14-38-41-clay-corner-web-app-493063a9551b.png"  />
 </div>
 
 Clay Corner, is where tradition and creativity come together to offer an exquisite collection of handcrafted clay pieces. Whether you're searching for stunning home decor, elegant vases, or functional pottery, Clay Corner has something to suit every taste and style. Each item in our collection is carefully crafted by skilled artisans, ensuring that every piece is unique and made with the utmost attention to detail. Our clay creations are perfect for adding a touch of warmth and personality to your home or as thoughtful gifts for loved ones. From rustic, earthy designs to more modern and sleek finishes, our range of products combines beauty with function, making them a lasting addition to any space. Explore our store today and bring home a piece of art that will elevate your home and create lasting memories.
