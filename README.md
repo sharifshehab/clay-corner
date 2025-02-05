@@ -9,9 +9,10 @@ Clay Corner, is where tradition and creativity come together to offer an exquisi
 
 ## Technologies used:
 - **React Router**
+- **Context API**
 - **Firebase**
-- **Express.js**
-- **JWT**
+- **Tanstack Query**
+- **Axios**
 
 ## Key features:
 1. **Pagination with dynamic content**
