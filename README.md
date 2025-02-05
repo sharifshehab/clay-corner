@@ -15,9 +15,9 @@ Clay Corner, is where tradition and creativity come together to offer an exquisi
 - **Axios**
 
 ## Key features:
-1. **Pagination with dynamic content**
-2. **Search functionality**
-3. **Protected routes for registered users**
+1. **Pagination to browse multiple pages of the website with dynamic content**
+2. **Title-based search functionality to help users quickly find their desired items**
+3. **Protected routes to restrict access for unwanted users, for secured and personal information**
 
 ## Dependencies:
     - axios: ^1.7.7,
