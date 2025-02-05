@@ -1,7 +1,7 @@
 # Clay Corner - The Handcrafters Sanctuary 
 
 <div align="center">
-  <img height="1700" width="100%" src="https://i.ibb.co.com/q8BcDmJ/clay-corner.webp"  />
+  <img height="750" width="100%" src="https://i.ibb.co.com/7t05Ffwh/clay-corner-mockup.webp"  />
 </div>
 
 
